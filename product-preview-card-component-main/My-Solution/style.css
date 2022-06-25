@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --darkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --verydarkblue: hsl(212, 21%, 14%);
+  --darkgrayishblue: hsl(228, 12%, 48%);
+  --white: #fff;
+  --montserrat: "Montserrat", sans-serif;
+  --fraunces: "Fraunces", serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--cream);
+}
+.card__container {
+  background: var(--white);
+  width: 640px;
+  height: 496px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.card__container_img {
+  width: 320px;
+  height: 496px;
+  border-radius: 20px 0px 0px 20px;
+}
+.card__container_writing {
+  margin-left: 36px;
+}
+.card__container_writing_head {
+  font-family: var(--montserrat);
+  color: var(--darkgrayishblue);
+  font-size: 14px;
+  letter-spacing: 0.29em;
+  margin-top: 41px;
+}
+.card__container_writing_title {
+  font-family: var(--fraunces);
+  color: var(--verydarkblue);
+  font-size: 26px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.card__container_writing_body-desktop {
+  color: var(--darkgrayishblue);
+  font-family: var(--montserrat);
+  font-size: 14px;
+  margin-bottom: 39px;
+  line-height: 25px;
+}
+.card__container_writing_body-mobile {
+  display: none;
+  color: var(--darkgrayishblue);
+  font-family: var(--montserrat);
+  font-size: 12px;
+  margin-bottom: 39px;
+  line-height: 25px;
+}
+.card__container_writing_price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 53px;
+}
+.card__container_writing_price_current {
+  color: var(--darkcyan);
+  font-family: var(--fraunces);
+  font-weight: 700;
+  font-size: 26px;
+}
+.card__container_writing_button {
+  background: var(--darkcyan);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 14px 50px;
+  gap: 10px;
+}
+.card__container_writing_button:hover{
+    cursor: pointer;
+    background: hsl(158, 36%, 18%);
+}
+.card__container_writing_price_past {
+  font-family: var(--montserrat);
+  color: var(--darkgrayishblue);
+  text-decoration-line: line-through;
+}
+.card__container_writing_button_text {
+  color: var(--white);
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 14px;
+}
+@media (max-width: 390px) {
+  body {
+    flex-direction: column;
+  }
+  .card__container {
+    width: calc(317px + 20px);
+    height: 686px;
+    flex-direction: column;
+  }
+  .card__container_img {
+    src: url(/product-preview-card-component-main/My-Solution/images/image-product-mobile.jpg);
+    width: 337px;
+    height: 256px;
+    margin-bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+  }
+  .card__container_writing_head {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .card__container_writing_title {
+    margin-bottom: 18.78px;
+  }
+  .card__container_writing_body {
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  .card__container_writing_price {
+    margin-bottom: 18.35px;
+    margin-right: 40px;
+  }
+  .card__container_writing_button {
+    width: 283px;
+    margin-bottom: 47px;
+  }
+  .card__container_writing_body-desktop {
+    display: none;
+  }
+  .card__container_writing_body-mobile {
+    display: inline-block;
+  }
+}
