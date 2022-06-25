@@ -112,7 +112,7 @@ body {
     flex-direction: column;
   }
   .card__container_img {
-    src: url(/product-preview-card-component-main/My-Solution/images/image-product-mobile.jpg);
+    src: url(images/image-product-mobile.jpg);
     width: 337px;
     height: 256px;
     margin-bottom: 0px;
