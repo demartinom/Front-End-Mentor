@@ -73,3 +73,27 @@ body {
   max-width: 135px;
   font-size: 15px;
 }
+
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    height: 611px;
+  }
+  .box__svg {
+    margin-top: 108px;
+  }
+  .car-type {
+    margin-top: 45px;
+  }
+  .car-description {
+    margin-top: 37px;
+  }
+  .button {
+    margin-top: 105px;
+  }
+}
