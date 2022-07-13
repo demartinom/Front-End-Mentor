@@ -1,0 +1,78 @@
+$color-orange: hsl(31, 77%, 52%);
+$color-cyan: hsl(184, 100%, 22%);
+$color-dark-cyan: hsl(179, 100%, 13%);
+$color-trans-white: hsla(0, 0%, 100%, 0.75); /* For paragraphs */
+$color-gray: hsl(0, 0%, 95%); /* Background, headings, buttons */
+$font-lexend: "Lexend Deca", sans-serif;
+$font-shoulders: "Big Shoulders Display", cursive;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  max-width: 336px;
+  padding-left: 48px;
+  padding-right: 65px;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  // max-height: 324px;
+  .car-description {
+    color: $color-trans-white;
+    font-family: $font-lexend;
+    font-weight: 400;
+  }
+  &.bg-orange {
+    background: $color-orange;
+    border-radius: 5px 5px 0px 0px;
+    .car-description {
+      margin-bottom: 13px;
+    }
+    .button {
+      color: $color-orange;
+    }
+  }
+  &.bg-cyan {
+    background: $color-cyan;
+    .car-description {
+      margin-bottom: 12px;
+    }
+    .button {
+      color: $color-cyan;
+    }
+  }
+  &.bg-dark-cyan {
+    background: $color-dark-cyan;
+    border-radius: 0px 0px 5px 5px;
+    .car-description {
+      margin-bottom: 22px;
+    }
+    .button {
+      color: $color-dark-cyan;
+    }
+  }
+}
+.car-type {
+  font-family: $font-shoulders;
+  font-weight: 700;
+}
+.button {
+  background: #fff;
+  border-radius: 30px;
+  padding: 11px 26px;
+  font-family: $font-lexend;
+  max-width: 135px;
+  font-size: 15px;
+}

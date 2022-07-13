@@ -1,0 +1,75 @@
+/* For paragraphs */
+/* Background, headings, buttons */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  max-width: 336px;
+  padding-left: 48px;
+  padding-right: 65px;
+  padding-top: 28px;
+  padding-bottom: 32px;
+}
+.box .car-description {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.box.bg-orange {
+  background: hsl(31deg, 77%, 52%);
+  border-radius: 5px 5px 0px 0px;
+}
+.box.bg-orange .car-description {
+  margin-bottom: 13px;
+}
+.box.bg-orange .button {
+  color: hsl(31deg, 77%, 52%);
+}
+.box.bg-cyan {
+  background: hsl(184deg, 100%, 22%);
+}
+.box.bg-cyan .car-description {
+  margin-bottom: 12px;
+}
+.box.bg-cyan .button {
+  color: hsl(184deg, 100%, 22%);
+}
+.box.bg-dark-cyan {
+  background: hsl(179deg, 100%, 13%);
+  border-radius: 0px 0px 5px 5px;
+}
+.box.bg-dark-cyan .car-description {
+  margin-bottom: 22px;
+}
+.box.bg-dark-cyan .button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+.car-type {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+.button {
+  background: #fff;
+  border-radius: 30px;
+  padding: 11px 26px;
+  font-family: "Lexend Deca", sans-serif;
+  max-width: 135px;
+  font-size: 15px;
+}
