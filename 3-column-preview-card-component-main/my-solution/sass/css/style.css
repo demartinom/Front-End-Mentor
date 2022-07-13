@@ -96,4 +96,10 @@ body {
   .button {
     margin-top: 105px;
   }
+  .box.bg-orange {
+    border-radius: 5px 0px 0px 5px;
+  }
+  .box.bg-dark-cyan {
+    border-radius: 0px 5px 5px 0px;
+  }
 }
