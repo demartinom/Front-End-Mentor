@@ -1,0 +1,35 @@
+$color-cyan: hsl(179, 62%, 43%);
+$color-bright-yellow: hsl(71, 73%, 54%);
+$color-light-gray: hsl(204, 43%, 93%);
+$color-grayish-blue: hsl(218, 22%, 67%);
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+$font-karla: "Karla", sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $color-light-gray;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  position: absolute;
+  bottom: 30px;
+  right: 40%;
+  width: 20%;
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
