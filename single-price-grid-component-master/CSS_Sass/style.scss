@@ -20,6 +20,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+main {
+  font-family: $font-karla;
+}
 .container__main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -27,14 +30,20 @@ body {
   gap: 0px 0px;
   .container__1 {
     grid-area: 1 / 1 / 2 / 3;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
   }
-  .Container__2 {
+  .container__2 {
     grid-area: 2 / 1 / 3 / 2;
+    background: $color-cyan;
+    border-radius: 0 0 0 10px;
   }
-  .Container__3 {
+  .container__3 {
     grid-area: 2 / 2 / 3 / 3;
+    background: lighten($color-cyan, 20%);
+    border-radius: 0 0 10px 0;
     li {
-      color: green;
+      list-style: none;
     }
   }
 }
