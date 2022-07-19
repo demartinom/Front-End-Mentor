@@ -32,14 +32,14 @@ main {
     grid-area: 1 / 1 / 2 / 3;
     background: #fff;
     border-radius: 10px 10px 0 0;
-    .header{
+    .header {
       color: $color-cyan;
       font-size: 25px;
     }
-    .sub-header{
+    .sub-header {
       color: $color-bright-yellow;
     }
-    .body{
+    .body {
       color: $color-grayish-blue;
     }
   }
@@ -54,6 +54,7 @@ main {
     border-radius: 0 0 10px 0;
     li {
       list-style: none;
+      color: #4ABEBD;
     }
   }
 }
