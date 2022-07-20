@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container__background {
+  background-image: url(/images/bg-hero-desktop.svg);
+}
