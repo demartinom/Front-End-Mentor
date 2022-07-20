@@ -7,3 +7,13 @@
 .container__background {
   background-image: url(/images/bg-hero-desktop.svg);
 }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
