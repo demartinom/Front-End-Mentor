@@ -1,17 +1,12 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.container__background{
-    background-image: url(/images/bg-hero-desktop.svg);
+@import "base";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
 
-}
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
-.flex-column{
-    display: flex;
-    flex-direction: column;
+$color-pink: hsl(322, 100%, 66%);
+$color-light-cyan: hsl(192, 100%, 96%);
+$color-dark-cyan: hsl(192, 100%, 9%);
+$color-grayish-blue: hsl(208, 11%, 55%);
+$font-poppins: "Open Sans", sans-serif;
+$font-open-sans: "Poppins", sans-serif;
+body{
+    font-size: 18px;
 }

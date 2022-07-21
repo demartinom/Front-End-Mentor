@@ -1,19 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.container__background {
-  background-image: url(/images/bg-hero-desktop.svg);
+.font-semi-bold {
+  font-weight: 600;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
+.font-bold {
+  font-weight: 700;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
+body {
+  font-size: 18px;
 }
