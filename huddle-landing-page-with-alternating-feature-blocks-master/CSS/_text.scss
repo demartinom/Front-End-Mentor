@@ -1,0 +1,8 @@
+@import "variables";
+
+@mixin body-text {
+    font-family: $font-open-sans;
+    font-size: 18px;
+    color: $color-dark-cyan;
+    font-weight: 400;
+}

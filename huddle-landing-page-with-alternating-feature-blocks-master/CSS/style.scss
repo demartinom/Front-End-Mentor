@@ -1,12 +1,40 @@
 @import "base";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
+@import "buttons";
+@import "text";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap');
 
-$color-pink: hsl(322, 100%, 66%);
-$color-light-cyan: hsl(192, 100%, 96%);
-$color-dark-cyan: hsl(192, 100%, 9%);
-$color-grayish-blue: hsl(208, 11%, 55%);
-$font-poppins: "Open Sans", sans-serif;
-$font-open-sans: "Poppins", sans-serif;
-body{
-    font-size: 18px;
+body {
+  font-size: 18px;
+  margin: 0 73px;
+  background-image: url(/images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+}
+.nav {
+  @include flex-row;
+  @include space-between;
+  margin-top: 47px;
+}
+.hero {
+  @include flex-row;
+  margin-top: 98px;
+  &__text {
+    @include flex-column;
+    margin-right: 100px;
+    margin-top: 87px;
+  }
+  &__header {
+    max-width: 384px;
+    font-family: $font-poppins;
+    font-size: 35px;
+    @include font-semi-bold;
+    margin-bottom: 33px;
+  }
+  &__body {
+    max-width: 515px;
+    @include body-text;
+  }
+  &__image {
+    max-width: 679px;
+  }
 }

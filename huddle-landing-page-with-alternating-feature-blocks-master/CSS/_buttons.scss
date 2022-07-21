@@ -1,0 +1,23 @@
+@import "variables";
+@mixin button {
+  background: #f3f3f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 25px;
+  font-size: 13px;
+  @include font-bold;
+  padding: 15px 76px;
+  text-align: center;
+  font-family: $font-open-sans;
+  gap: 10px;
+
+}
+.nav__button {
+  @include button;
+}
+.hero__button {
+  @include button;
+  background-color: $color-pink;
+  max-width: 280px;
+  color: #fff;
+  margin-top: 66px;
+}
