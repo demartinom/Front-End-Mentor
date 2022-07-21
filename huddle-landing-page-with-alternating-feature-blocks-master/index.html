@@ -4,77 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Huddle Landing Page</title>
   </head>
   <body>
-    <div class="container__background">
-    <nav class="container__nav flex-row">
-      <div class="image nav_logo">
-        <img src="images/logo.svg" alt="Logo" />
-      </div>
-      <div class="nav__button button">
-        <p>Try It Free</p>
-      </div>
+    <nav class="nav">
+      <img src="images/logo.svg" alt="Logo" class="nav__logo" />
+      <div class="nav__button">Try it Free</div>
     </nav>
     <main>
-      <div class="container__hero flex-row">
-        <p class="hero__header">Build The Community Your Fans Will Love</p>
+      <div class="hero">
+        <h1 class="hero__header">Build The Community Your Fans Will Love</h1>
         <p class="hero__body">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
-        <div class="hero__button button">
-          <p>Get Started For Free</p>
-        </div>
-        <div class="image hero__image">
-          <img src="images/illustration-mockups.svg" alt="Mockup" />
-        </div>
+        <div class="hero__button">Get Started For Free</div>
+        <img
+          src="images/illustration-mockups.svg"
+          alt="Mockups"
+          class="hero__image"
+        />
       </div>
-    </div>
-      <div class="container__features flex-row">
-        <p class="features__header">Grow Together</p>
+      <div class="features">
+        <h2 class="features__header">Grow Together</h2>
         <p class="features__body">
           Generate meaningful discussions with your audience and build a strong,
           loyal community. Think of the insightful conversations you miss out on
           with a feedback form.
         </p>
-        <div class="image features__image">
-          <img src="images/illustration-grow-together.svg" alt="Image" />
-        </div>
+        <img
+          src="images/illustration-grow-together.svg"
+          alt="grow together"
+          class="features__image"
+        />
       </div>
-      <div class="container__features flex-row">
-        <div class="image features__image">
-          <img src="images/illustration-flowing-conversation.svg" alt="Image" />
-        </div>
-        <p class="features__header">Flowing Conversations</p>
+      <div class="features">
+        <img
+          src="images/illustration-flowing-conversation.svg"
+          alt="flowing conversation"
+          class="features__image"
+        />
+        <h2 class="features__header">Flowing Conversations</h2>
         <p class="features__body">
           You wouldn't paginate a conversation in real life, so why do it
           online? Our threads have just-in-time loading for a more natural flow.
         </p>
       </div>
-      <div class="container__features flex-row">
-        <p class="features__header">Your Users</p>
+      <div class="features">
+        <h2 class="features__header">Your Users</h2>
         <p class="features__body">
           It takes no time at all to integrate Huddle with your app's
           authentication solution. This means, once signed in to your app, your
           users can start chatting immediately.
         </p>
-        <div class="image features__image">
-          <img src="images/illustration-your-users.svg" alt="Image" />
-        </div>
+        <img
+          src="images/illustration-your-users.svg"
+          alt="Your Users"
+          class="features__image"
+        />
       </div>
-      <div class="container__CTA flex-column">
-        <p class="CTA__header">Ready To Build Your Community?</p>
-        <div class="button CTA__button">
-          <p>Get Started For Free</p>
-        </div>
+      <div class="CTA">
+        <h2 class="CTA__header">Ready To Build Your Community?</h2>
+        <div class="CTA__button">Get Started For Free</div>
       </div>
     </main>
-    <footer class="container__footer">
-      <div class="image footer__logo">
-        <img src="images/logo.svg" alt="White Logo">
+    <footer class="footer">
+      <img src="images/logo.svg" alt="Logo" class="footer_logo" />
+      <div class="footer__information">
+        <div class="footer__contact">
+          <div class="footer__contact__info">
+            <img
+              src="images/icon-location.svg"
+              alt="Location"
+              class="footer__contact__info__icon"
+            />
+            <p class="footer__contact__info__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="footer__contact__info">
+            <img
+              src="images/icon-phone.svg"
+              alt="Phone"
+              class="footer__contact__info__icon"
+            />
+            <p class="footer__contact__info__text">+1-543-123-4567</p>
+          </div>
+          <div class="footer__contact__info">
+            <img
+              src="images/icon-email.svg"
+              alt="Email"
+              class="footer__contact__info__icon"
+            />
+            <p class="footer__contact__info__text">example@huddle.com</p>
+          </div>
+        </div>
+        <ul class="footer__sitemap">
+          <li>About Us</li>
+          <li>Career</li>
+          <li>What We Do</li>
+          <li>Blog</li>
+          <li>FAQ</li>
+          <li>Contact US</li>
+        </ul>
       </div>
     </footer>
   </body>
