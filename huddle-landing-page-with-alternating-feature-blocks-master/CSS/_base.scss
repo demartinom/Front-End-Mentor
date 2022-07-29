@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin space-between{
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin justify-center{
+  justify-content: center;
+}
+@mixin flex-start{
+  justify-content: flex-start;
+}
+@mixin align-center{
+  align-items: center;
+}
+@mixin font-semi-bold{
+  font-weight: 600;
+}
+@mixin font-bold {
+  font-weight: 700;
+}
