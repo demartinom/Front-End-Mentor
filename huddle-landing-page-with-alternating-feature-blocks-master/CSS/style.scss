@@ -2,22 +2,27 @@
 @import "buttons";
 @import "text";
 @import "variables";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap");
 
 body {
   font-size: 18px;
-  margin: 0 73px;
   background-image: url(/images/bg-hero-desktop.svg);
   background-repeat: no-repeat;
 }
 .nav {
+  margin: 0 73px;
   @include flex-row;
   @include space-between;
   margin-top: 47px;
 }
+main{
+  margin: 0 73px 330px 0;
+
+}
 .hero {
   @include flex-row;
   margin-top: 98px;
+  margin-bottom: 95px;
   &__text {
     @include flex-column;
     margin-right: 100px;
@@ -36,5 +41,58 @@ body {
   }
   &__image {
     max-width: 679px;
+  }
+}
+.features {
+  max-width: 1294px;
+  @include flex-row;
+  @include align-center;
+  box-shadow: $box-shadow;
+  padding: 37px;
+  margin-bottom: 50px;
+  &__text {
+    @include flex-column;
+    margin: 75px 113px 51px 113px;
+    max-width: 485px;
+  }
+  &__header {
+    font-family: $font-poppins;
+    font-size: 25px;
+    color: $color-dark-cyan;
+  }
+  &__image {
+    max-width: 440px;
+    max-height: 361px;
+  }
+  &__body {
+    font-family: $font-open-sans;
+    font-size: 18px;
+    color: $color-grayish-blue;
+  }
+}
+.CTA {
+  width: 732px;
+  position: absolute;
+  top: 2260px;
+  left: 360px;
+  background: #fff;
+  @include flex-column;
+  @include align-center;
+  text-align: center;
+  box-shadow: $box-shadow;
+  border-radius: 20px;
+  z-index: 3;
+  &__header {
+    color: $color-dark-cyan;
+    font-family: $font-poppins;
+    margin-top: 101px;
+    margin-bottom: 46px;
+  }
+}
+.footer{
+  z-index: 1;
+  background: $color-dark-cyan;
+  &__logo{
+    margin-top: 209px;
   }
 }
