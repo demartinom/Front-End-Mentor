@@ -15,7 +15,7 @@
   text-align: center;
   font-family: "Open Sans", sans-serif;
   gap: 10px;
-} 
+}
 
 .hero__button {
   background: #f3f3f3;
@@ -64,7 +64,7 @@ body {
 }
 
 main {
-  margin: 0 73px 330px 0;
+  margin: 0 73px 330px 73px;
 }
 
 .hero {
