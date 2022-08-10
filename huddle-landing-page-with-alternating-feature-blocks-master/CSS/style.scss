@@ -8,7 +8,6 @@ body {
   font-size: 18px;
   background-image: url(/images/bg-hero-desktop.svg);
   background-repeat: no-repeat;
-  
 }
 .nav {
   margin: 0 73px;
@@ -16,9 +15,8 @@ body {
   @include space-between;
   margin-top: 47px;
 }
-main{
+main {
   margin: 0 73px 330px 73px;
-
 }
 .hero {
   @include flex-row;
@@ -90,10 +88,40 @@ main{
     margin-bottom: 46px;
   }
 }
-.footer{
+.footer {
   z-index: 1;
   background: $color-dark-cyan;
-  &__logo{
+  color: #fff;
+  font-family: $font-poppins;
+  font-size: 12px;
+  padding-left: 112px;
+  &__logo {
     margin-top: 209px;
+  }
+  &__information {
+    margin-top: 81px;
+  }
+  &__contact {
+    margin-right: 133px;
+  }
+  &__contact__info {
+    @include flex-row;
+    img {
+      margin-right: 16px;
+      max-height: 18px;
+    }
+    &__text {
+      max-width: 292px;
+      margin-bottom: 28px;
+    }
+  }
+  &__information {
+    @include flex-row;
+  }
+  &__sitemap{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 76px;
   }
 }

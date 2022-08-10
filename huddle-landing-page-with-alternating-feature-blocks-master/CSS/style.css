@@ -151,7 +151,39 @@ main {
 .footer {
   z-index: 1;
   background: hsl(192deg, 100%, 9%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  padding-left: 112px;
 }
 .footer__logo {
   margin-top: 209px;
+}
+.footer__information {
+  margin-top: 81px;
+}
+.footer__contact {
+  margin-right: 133px;
+}
+.footer__contact__info {
+  display: flex;
+  flex-direction: row;
+}
+.footer__contact__info img {
+  margin-right: 16px;
+  max-height: 18px;
+}
+.footer__contact__info__text {
+  max-width: 292px;
+  margin-bottom: 28px;
+}
+.footer__information {
+  display: flex;
+  flex-direction: row;
+}
+.footer__sitemap {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 76px;
 }

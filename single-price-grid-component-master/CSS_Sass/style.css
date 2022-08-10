@@ -51,7 +51,7 @@ main {
 }
 .container__main .container__3 li {
   list-style: none;
-  color: hsla(0deg, 0%, 100%, 0.8);
+  color: hsl(204deg, 43%, 93%);
 }
 
 footer {
