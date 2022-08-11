@@ -28,13 +28,8 @@ const windowFunctions = () => {
     confirmButton.addEventListener("click", changeActive);
   };
 
-  const finalRating = () => {
-    let span = document.querySelector('span')
-    let rating = document.querySelector('active')
-  };
 
   clickOnButton();
   confirmationPage();
-  finalRating();
 };
 window.onload = windowFunctions;
