@@ -7,10 +7,14 @@ const windowFunctions = () => {
           if (!button.classList.contains("clicked")) {
             currentActive = document.querySelector(".clicked");
             button.setAttribute("class", "clicked ratings-selection");
-            currentActive.setAttribute("class", "ratings-selection");
-            let span = document.querySelector('.number-choice')
-            activeRating = document.querySelector('.clicked')
-            span.innerHTML = activeRating.innerHTML
+            if (currentActive.classList.contains("default")) {
+              currentActive.setAttribute("class", "ratings-selection default");
+            } else {
+              currentActive.setAttribute("class", "ratings-selection");
+            }
+            let span = document.querySelector(".number-choice");
+            activeRating = document.querySelector(".clicked");
+            span.innerHTML = activeRating.innerHTML;
           } else {
             button.setAttribute("class", "ratings-selection");
           }
@@ -27,7 +31,6 @@ const windowFunctions = () => {
     };
     confirmButton.addEventListener("click", changeActive);
   };
-
 
   clickOnButton();
   confirmationPage();
