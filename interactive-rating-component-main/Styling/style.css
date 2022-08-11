@@ -76,6 +76,7 @@ body {
 }
 .clicked:hover {
   background-color: #959eac;
+  cursor: auto;
 }
 
 .inactive {
