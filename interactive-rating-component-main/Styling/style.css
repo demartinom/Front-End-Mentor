@@ -66,8 +66,20 @@ body {
   cursor: pointer;
 }
 
-.inactive {
+.default {
   display: none;
+}
+
+.clicked {
+  color: #fff;
+  background-color: #959eac;
+}
+.clicked:hover {
+  background-color: #959eac;
+}
+
+.inactive {
+  display: none !important;
 }
 
 .title {
@@ -92,4 +104,38 @@ body {
   background-color: #fff;
   color: #fc7613;
   cursor: pointer;
+}
+
+.confirmation-page {
+  background: #1f2630;
+  width: 525px;
+  border-radius: 40px;
+  padding-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thanks-picture {
+  margin-top: 50px;
+}
+
+.selection {
+  margin-top: 40px;
+  color: #fc7613;
+  background-color: #262f38;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.thanks {
+  color: #fff;
+}
+
+.thank-you-body {
+  width: 366px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #959eac;
 }
