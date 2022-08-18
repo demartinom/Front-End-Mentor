@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  --color-red: hsl(0, 100%, 74%);
+  --color-green: hsl(154, 59%, 51%);
+  --color-accent-blue: hsl(248, 32%, 49%);
+  --color-dark-blue: hsl(249, 10%, 26%);
+  --color-grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: var(--color-red);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bigtext {
+  color: #fff;
+  margin-left: 167px;
+}
+.bigtext-head {
+  font-weight: 700;
+  font-size: 55px;
+  width: 463px;
+  margin-bottom: 25px;
+}
+.bigtext-body {
+  width: 553px;
+  font-size: 16px;
+}
+.boxs-container {
+  font-size: 15px;
+  align-self: flex-start;
+  margin-top: 83px;
+}
+.promotion {
+  color: #fff;
+  background-color: #5d54a3;
+  font-weight: 600;
+  padding: 19px 115px;
+  gap: 10px;
+  box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.promotion span {
+  font-weight: 400;
+}
+.user-information {
+  margin-top: 27px;
+  background-color: #fff;
+  box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 64px 49px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+input {
+  color: var(--color-dark-blue);
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 60px;
+}
+input::placeholder {
+  color: var(--color-grayish-blue);
+  font-size: 15px;
+  font-weight: 600;
+}
+.claim-button {
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 10px;
+  padding: 22px 123px;
+  width: 494.25px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.terms-text {
+  font-size: 13px;
+  text-align: center;
+  color: var(--color-grayish-blue);
+}
+.terms-text span {
+  color: var(--color-red);
+}
