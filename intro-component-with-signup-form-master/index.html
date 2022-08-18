@@ -15,35 +15,66 @@
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
-      <div class="bigtext">
-        <h1 class="bigtext-head">Learn to code by watching others</h1>
+    <div class="bigtext">
+      <h1 class="bigtext-head">Learn to code by watching others</h1>
 
-        <h2 class="bigtext-body">
-          See how experienced developers solve problems in real-time. Watching
-          scripted tutorials is great, but understanding how developers think is
-          invaluable.
-        </h2>
-      </div>
-      <div class="boxs-container">
-          <p class="promotion">
-            Try it free 7 days <span>then $20/mo. thereafter</span>
-          </p>
-        <div class="user-information">
-          <input type="text" name="First-Name" id="First-Name" placeholder="First Name">
-          <input type="text" name="Last-Name" id="Last-Name" placeholder="Last Name">
-          <input type="text" name="email" id="email" placeholder="Email">
-          <input type="text" name="password" id="password" placeholder="Password">
-          <!-- <p class="user-information-text">First Name</p>
-          <p class="user-information-text">Last Name</p>
-          <p class="user-information-text">Email Address</p>
-          <p class="user-information-text">Password</p> -->
-          <button class="claim-button">Claim your free trial</button>
-          <p class="terms-text">
-            By clicking the button, you are agreeing to our
-            <span>Terms and Services</span>
-          </p>
+      <h2 class="bigtext-body">
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </h2>
+    </div>
+    <div class="boxs-container">
+      <p class="promotion">
+        Try it free 7 days <span>then $20/mo. thereafter</span>
+      </p>
+      <form class="user-information">
+        <div class="input-field">
+          <input
+            type="text"
+            class="form-field"
+            name="First-Name"
+            id="First-Name"
+            placeholder="First Name"
+          />
         </div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="form-field"
+            name="Last-Name"
+            id="Last-Name"
+            placeholder="Last Name"
+          />
+        </div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="form-field"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="input-field">
+          <input
+            type="text"
+            class="form-field"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          </div>
+          <button class="claim-button" type="submit">
+            Claim your free trial
+          </button>
+        </form>
+        <p class="terms-text">
+          By clicking the button, you are agreeing to our
+          <span>Terms and Services</span>
+        </p>
       </div>
-      <script src="script.js"></script>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
