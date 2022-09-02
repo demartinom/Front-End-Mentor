@@ -93,7 +93,6 @@ input::placeholder {
   font-size: 13px;
   text-align: center;
   color: var(--color-grayish-blue);
-  margin-top: 21px;
 }
 .terms-text span {
   color: var(--color-red);
@@ -109,4 +108,5 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-bottom: 5px;
 }

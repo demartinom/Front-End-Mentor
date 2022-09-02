@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+  height: 100vh
+}
+
+.QR-Container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+.QR-Image{
+    max-width: 300px;
+    border-radius: 15px;;
+}
+.QR-Header{
+    max-width: 360px;
+}
+.QR-Body{
+    max-width: 230px;
+}
